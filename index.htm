@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            
+            theme: {
+                fontFamily:{
+                    'popin' : 'Poppins',
+                },
+                screens:{
+                    'desktop': '1470px',
+                },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+    <title>assignment</title>
+</head>
+<body>
+    <div class="container flex justify-center mx-auto p-10 font-popin">
+        <div class="desktop:flex gap-12 rounded-lg">
+            <div class="hidden desktop:block">
+                <img src="src/img/Rectangle 2756.svg" alt="perahun" class="rounded-l-lg">
+            </div>
+
+            <div class="px-4 pt-8 pb-auto flex flex-col gap-6"> 
+                <div class="min-w-[21.4375rem]"></div>
+    
+                <div class="hidden desktop:block ">
+                    <img src="src/img/Logo.svg" alt="logo">
+                </div>
+                <h1 class="font-bold text-xl">Nice to see you again</h1>
+                <form class="flex flex-col gap-6">
+                    <input type="text" placeholder="  Email or phone number" class="py-2  bg-slate-200 rounded-lg">
+    
+                    <input type="password" placeholder="  Enter Password" class="py-2 bg-slate-200 rounded-lg">
+    
+                    <div class="text-xs text-purple-500 text-end">
+                        <a href="#">Forgot password?</a>
+                    </div>
+    
+                    <input type="submit" value="Sign In" class="py-2 bg-purple-500 text-white text-center rounded-lg">
+                    <hr class="border-t-1">
+                    <button class="py-2 bg-gray-800  text-white rounded-lg flex justify-center gap-1 text-sm">
+                        <img src="src/img/Google.svg" alt="logo Google"> Or sign in with Google
+                    </button>
+                    <p class="text-center text-xs">Dont have an account? <a href="#" class="text-purple-500">Sign up now</a></p>
+                </form>
+                <div class="flex justify-center py-8 desktop:hidden"> 
+                    <img src="src/img/Logo.svg" alt="logo">
+                </div>
+                <div class="text-center text-xs text-slate-400 desktop:mt-72">
+                    <p>&copy;Perfect Login 2021</p>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+</body>
+</html>
